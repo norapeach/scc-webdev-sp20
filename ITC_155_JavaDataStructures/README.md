@@ -3,5 +3,9 @@ Completed assignments and programs for this course which covers advanced Java la
 
 Many of the included practice exercises are directly from "Building Java Programs: a back to basics approach" by S. Reges and M. Stepp. Pearson. 5th edition.
 
+## Assignment 0 4/19/20
+BJP5 p.665 Ex. 15 Octagon class: Octagon.java objects represent a regular 8-sided polygon with equal-length sides. Octagon implements the BasicShape.java interface. ShapeClient.java includes example client code to output the toString() value of the polymorphic array of shape objects. OctagonTest.java includes the junit tests - focused on the calcArea() and calcPerimeter() method tests.
+
 ## Assignment 1 4/16/20
 BJP5 p.232 Ex. MickeyBox: Displays colored shapes utilizing the DrawingPanel class. 
+
