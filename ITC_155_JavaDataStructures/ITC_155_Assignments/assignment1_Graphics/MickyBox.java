@@ -8,8 +8,8 @@ package assignment1_Graphics;
  * @version 14.04.20
  * ITC 155 Data Systems
  * Description: Building Java Programs, 5th ed. Pg 232 Ex. 1 
- * 				Utilizes DrawingPanel class to display a window with a yellow background,
- * 				a red box with two blue circles & a black line across the middle.
+ * Utilizes DrawingPanel class to display a window with a yellow background,
+ * a red box with two blue circles & a black line across the middle.
  */
 
 import java.awt.*; // for Color class and Graphics object
@@ -26,8 +26,8 @@ public class MickyBox {
 		
 		//set colors for each element prior to using fill/draw methods
 		g.setColor(Color.BLUE);
-		g.fillOval(50,  25, 40, 40);
-		g.fillOval(130,  25, 40, 40);
+		g.fillOval(50, 25, 40, 40);
+		g.fillOval(130, 25, 40, 40);
 		g.setColor(Color.RED);
 		g.fillRect(70, 45, 80, 80);
 		g.setColor(Color.BLACK);
