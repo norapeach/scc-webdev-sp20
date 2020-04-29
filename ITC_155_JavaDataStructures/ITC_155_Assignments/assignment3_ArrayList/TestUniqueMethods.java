@@ -36,12 +36,23 @@ public class TestUniqueMethods {
 	public void testRemoveEvenLength() {
 		strs = new ArrayList<>(Arrays.asList("so", "how", "are", "you", "today?"));
 		ArrayList<String> expected = new ArrayList<>(Arrays.asList("how", "are", "you"));
-		// assertFalse(strs.isEmpty()); // checks that there are values
-		UniqueMethods.removeEvenLength(strs);
-		assertFalse(strs.isEmpty());
-		assertEquals(expected, strs);
+		int testStr = strs.get(0).length(); // get length of a String
+		String toStringExpected = "[how, are, you]";
+		assertTrue(strs.size() == 5);
+		assertTrue(testStr % 2 != 1); // after the method call, confirm it is odd
+		
+		UniqueMethods.removeEvenLength(strs); 
+		
+		assertTrue(strs.size() == expected.size()); // lengths match
+		assertEquals(expected, strs); // Elements match
+		testStr = strs.get(0).length();
+		assertTrue(testStr % 2 == 1); // after the method call, confirm it is odd
 		expected.add("now");
-		assertNotEquals(expected, strs);
+		assertNotEquals(expected, strs); // after additional element added, no longer Equal
+		assertEquals(strs.toString(), toStringExpected);
+		
+		
+		
 		
 	}
 
@@ -52,9 +63,17 @@ public class TestUniqueMethods {
 	public void testDoubleList() {
 		strs = new ArrayList<>(Arrays.asList( "how", "are", "you"));
 		ArrayList<String> expected = new ArrayList<>(Arrays.asList("how", "how", "are", "are", "you", "you"));
+		String str1 = strs.get(0); // two example elements stored
+		String str2 = strs.get(1);
+		assertTrue(strs.size() == 3);
+		assertFalse(str1.equals(str2)); // not equal values before method call
 		UniqueMethods.doubleList(strs);
-		assertFalse(strs.isEmpty());
+		assertTrue(strs.size() == expected.size()); // size matches
+		str1 = strs.get(0); // after method call values are equal
+		str2 = strs.get(1);
+		assertTrue(str1.equals(str2));
 		assertEquals(expected, strs);
+		assertEquals(strs.toString(), expected.toString());
 		expected.add("now");
 		assertNotEquals(expected, strs);
 	}
