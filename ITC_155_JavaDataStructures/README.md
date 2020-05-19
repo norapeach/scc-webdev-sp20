@@ -3,6 +3,13 @@ Completed assignments and programs for this course which covers advanced Java la
 
 Many of the included practice exercises are directly from "Building Java Programs: a back to basics approach" by S. Reges and M. Stepp. Pearson. 5th edition.
 
+## 5/19/20 Assignment 6: SelectionSortMod.java
+The top of this program is blocked with comments that identify the complexity class of the methods mystery1 and mystery2 from BJP5 p 888 13.4, 5. The final algorithm analysis is from p890 13.18 and the program tests the implementation of this modified version of the selection sort algorithm.
+
+## 5/12/20 Assignment 5: WriteNums.java
+This program tests the recursive method writeNums that accepts an integer n and prints the first n integers
+starting with 1 in sequential order, separated by commas.
+
 ## 5/5/20 Assignment 4: IsUnique.java
 BJP5 p. 759 Ch 11, Ex. 13: IsUnique.java contains a class with twi static methods that have the same functionality, but are implemented slightly differently utilizing the Java Collections Framework. The methods isUnique and isUnique2 evaluate Maps for unique key/value pair mappings. JTestIsUnique.java contains the Junit tests for the IsUnique class. ClientIsUnique.java is the driver code showing the methods' functionality via the console.
 
